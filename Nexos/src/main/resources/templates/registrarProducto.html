@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link th:href="@{/css/bootstrap.css}" rel="stylesheet" />
+		<script th:src="@{/js/jquery/jquery-3.6.0.min.js}"> </script>
+		<script th:src="@{/js/jquery/bootstrap.js}"> </script>
+		
+		<title>Crear Producto</title>
+	</head>
+	<body>
+		
+		<h1>Crear Producto</h1>
+
+
+		<form th:action="@{/registrarProductoAcc}" method="post">
+
+			<div class="modal-body">					
+				<div class="form-group">
+					<label>Nombre</label>
+					<input type="text" name="nombre" class="form-control" required="">
+				</div>
+				<div class="form-group">
+					<label>Producto</label>
+					<input type="email"  name="producto" class="form-control" required="">
+				</div>
+				<div class="form-group">
+					<label>Cantidad</label>
+					<textarea name="cantidad"  class="form-control" required=""></textarea>
+				</div>
+				<div class="form-group">
+					<label>Fecha Ingreso</label>
+					<input type="text" name="fechaIngreso"  class="form-control" required="">
+				</div>
+
+				<div class="form-group">
+					<label>Usuario</label>
+					<input type="text" name="usuario"  class="form-control" required="">
+				</div>										
+
+			</div>
+			<div class="modal-footer">
+				<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+				<input type="submit" class="btn btn-success" value="Registrar">
+			</div>
+		</form>
+
+	</body>
+</html> 
